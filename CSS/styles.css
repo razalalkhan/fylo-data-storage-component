@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+--clr-primary-gradient-start: #ffa399;
+--clr-primary-gradient-end:#ff4d97;
+
+--clr-neutral-Pale-b: hsl(243, 100%, 93%);
+--clr-neutral-grayish-b: hsl(229, 7%, 55%);
+--clr-neutral-dark-b: hsl(228, 56%, 26%);
+--clr-neutral-very-db: #0c122c;
+
+--ff-all: 'Raleway', sans-serif;
+--fs-para:14px;
+
+--fw-400:400;
+--fw-700:700;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ==================================================Desktop view========================================================================= */
+
+body{
+
+    min-height: 100vh;
+    background-color:var(--clr-neutral-very-db);
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position:right bottom;  
+
+}
+
+section{
+
+  height: 85vh;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left:10%;
+  position: relative;
+    isolation: isolate;
+
+}
+
+.img-section {
+    width:25%;
+    margin-right:2%;
+    background-color: var(--clr-neutral-dark-b);
+    border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.logo{
+  
+  width:35%;
+  margin:8%;
+}
+
+
+.icon-img-1{
+
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-left:9%;
+  margin-bottom:9%;
+  width:40%;
+  
+}
+
+.window-icons{
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--clr-neutral-very-db);
+  border-radius: 0.5rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+
+.data-section{
+
+    width:40%;
+    color:var(--clr-neutral-Pale-b);
+    background-color: var(--clr-neutral-dark-b);
+    font-family: var(--ff-all);
+    font-size:var(--fs-para);
+    border-radius: 0.5rem;
+    margin-top:5%;
+    margin-bottom:1%;
+    display:flex;
+    flex-direction: column;
+    padding:1%;
+
+  }
+
+
+.text{
+  margin-top:2%;
+  font-size: 0.75rem;
+  font-weight: var(--fw-400);
+  opacity: 90%;
+  padding-bottom: 0.5rem;
+  align-self:flex-start;
+  margin-left:5%;
+}
+
+.text span{
+
+  font-weight: bold;
+}
+
+.track{
+  width: 90%;
+  background-color:var(--clr-neutral-very-db) ;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-top:3%;
+  margin-left:5%;
+
+}
+
+.range-slider{
+
+  width:80%;
+  background-image: linear-gradient( to right, #ffa399,#ff4d97);
+  border-radius: 2rem;
+  
+  display:flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0.1rem;
+
+}
+
+.thumb{
+
+  width: 2%;
+  height: 10px;
+  background-color: var(--clr-neutral-Pale-b);
+  border-radius: 10px;
+  
+}
+
+.range-values{
+
+  font-size:0.6rem;
+  font-weight:var(--fw-700);
+  opacity: 90%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:0.5rem;
+  margin-left:5%;
+  margin-right:5%;
+  padding-top:0.5%;
+  }
+
+
+.comment-section{
+  width:30%;
+  height:38%;
+  border-radius: 0.5rem;
+  position:absolute;
+  overflow: hidden;
+  top:40%;
+  left:72%;
+}
+
+.comment-box{
+  width:30%;
+  height:38%;
+  border-radius: 0.5rem;
+  background-color:var(--clr-neutral-Pale-b);
+  color:var(--clr-neutral-grayish-b);
+  font-size: 0.5rem;
+  font-weight: var(--fw-700);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 88% 70%, 0 68%); 
+  padding:0.5rem 1rem 0.5rem 1.5rem;
+
+} 
+
+.comment-box span{
+
+  color:var(--clr-neutral-very-db);
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+  padding-right: 0.5rem;
+}
+
+/* ==================================================End of desktop  view========================================================================= */
+  
+/* ==================================================Media Query for Mobile view========================================================================= */
+
+@media only screen and (max-width:750px){
+
+  body{
+
+    min-height: 100vh;
+    background-color:var(--clr-neutral-very-db);
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;  
+
+}
+
+section{
+
+  height: 90vh;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  margin-left: 0;
+
+}
+
+.img-section {
+  width:80%;
+
+}
+
+.icon-img-1{
+
+  width:50%;
+  
+}
+
+.data-section{
+
+  width:80%;
+  padding-bottom:10%;
+
+}
+
+.text{
+
+  margin:  5% auto 0 auto;
+
+}
+
+
+.comment-section{
+  width:90%;
+  height:25%;
+  position:absolute;
+  overflow: hidden;
+  top:67%;
+  left:30%;
+}
+
+.comment-box{
+  width:50%;
+  height:38%;
+  clip-path: none;
+
+} 
+
+
+}  
